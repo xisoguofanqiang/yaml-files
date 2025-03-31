@@ -2,7 +2,22 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "这里需要填写机场订阅地址，采用通用订阅或Clash订阅"
+    url: "https://xiao-guo.top/493685?sub=sub.keaeye.icu"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+    header:
+      User-Agent:
+      - "Clash"
+      - "mihomo"
+      - "Clash.meta"
+      proxy-providers:
+  Airport2:
+    url: "https://gawrgura.moe/api/v1/client/subscribe?token=84d464a15ed66a50427586200077978d"
     type: http
     interval: 86400
     health-check:
